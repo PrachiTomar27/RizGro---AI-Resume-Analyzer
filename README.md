@@ -116,17 +116,4 @@ A Flask web app that uses the Groq API to review a resume against a target role.
 └── templates/            # Jinja HTML templates
 ```
 
-## Important Security Notes
 
-This project is intended for learning and local demonstrations. Before deploying it publicly or handling real resumes:
-
-- Do not commit `.env`, API keys, database files, uploaded resumes, or screenshots containing personal information.
-- Change the default development configuration before deployment. Use a production WSGI server and set `debug=False`.
-- Replace plaintext password storage with a password hashing method such as Werkzeug's password helpers.
-- Add CSRF protection, input validation, file-size and file-type limits, and secure upload handling.
-- Review the privacy requirements for sending resume content to an external AI provider.
-- Rotate any credential immediately if it was ever committed or exposed. Removing a file in a later commit does not remove it from Git history.
-
-## License
-
-No license has been selected yet. Add a license before accepting outside contributions or reuse.
